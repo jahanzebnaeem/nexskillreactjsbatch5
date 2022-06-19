@@ -1,0 +1,20 @@
+h1 {
+	color: red;
+}
+
+ul {
+	font-size: 22px;
+}
+
+ul li {
+	font-style: small;
+}
+
+.oldli {
+	font-size: 12px;
+}
+
+.newli {
+	font-weight: bold;
+	font-style: italic;
+}
