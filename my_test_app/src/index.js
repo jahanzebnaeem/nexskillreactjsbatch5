@@ -1,21 +1,23 @@
 // jshint esversion:6
 
-// var React = require("react");
-// var ReactDOM = require("react-dom");
-
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-// ReactDOM.render(<h1>Hello World</h1><p>This is a paragraph</p>, document.getElementById("root"));
+const customeStyle = {
+  color: "orange",
+  fontSize: "24px",
+  border: "1px solid black",
+}
+
+customeStyle.color = "blue";
 
 ReactDOM.render(
-    <div>
-      <h1>hello</h1>
-      <p>I am fine</p>
-    </div>,
-    document.getElementById("root")
-  )
-
-// var h1 = document.createElement("h1");
-// h1.innerHTML = "Hello";
-// document.getElementById("root").appendChild(h1);
+  <div>
+    <h1 style={customeStyle}>Hello World</h1>
+    <ul>
+      <li>Pizza</li>
+      <li>Biryani</li>
+      <li>Nihari</li>
+    </ul>
+  </div>, 
+document.getElementById("root"));
