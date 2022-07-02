@@ -2,22 +2,13 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-
-const customeStyle = {
-  color: "orange",
-  fontSize: "24px",
-  border: "1px solid black",
-}
-
-customeStyle.color = "blue";
+// import pi, {doublePi, triplePi} from './math';
+import * as Pi from './math';
 
 ReactDOM.render(
-  <div>
-    <h1 style={customeStyle}>Hello World</h1>
-    <ul>
-      <li>Pizza</li>
-      <li>Biryani</li>
-      <li>Nihari</li>
-    </ul>
-  </div>, 
+  <ul>
+    <li>{Pi.default}</li>
+    <li>{Pi.doublePi()}</li>
+    <li>{Pi.triplePi()}</li>
+  </ul>, 
 document.getElementById("root"));
