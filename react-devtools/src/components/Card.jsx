@@ -1,4 +1,7 @@
+// jshint esversion:6
+
 import React from "react";
+import Detail from "./Detail";
 
 function Card(props) {
   return (
@@ -8,8 +11,8 @@ function Card(props) {
         <img className="circle-img" src={props.img} alt="avatar_img" />
       </div>
       <div className="bottom">
-        <p className="info">{props.tel}</p>
-        <p className="info">{props.email}</p>
+        <Detail detailInfo={props.tel} />
+        <Detail detailInfo={props.email} />
       </div>
     </div>
   );

@@ -1,3 +1,5 @@
+// jshint esversion:6
+
 const contacts = [
   {
     id: 1,
@@ -22,6 +24,14 @@ const contacts = [
       "https://i.pinimg.com/originals/e3/94/47/e39447de921955826b1e498ccf9a39af.png",
     phone: "+918 372 574",
     email: "gmail@chucknorris.com"
+  },
+  {
+    id: 4,
+    name: "Chuck Norris 2",
+    imgURL:
+      "https://i.pinimg.com/originals/e3/94/47/e39447de921955826b1e498ccf9a39af.png",
+    phone: "+918 372 573",
+    email: "gmail@chucknorris2.com"
   }
 ];
 
